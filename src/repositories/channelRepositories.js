@@ -32,6 +32,6 @@ export const findByCategory = async (category) =>{
 
 // create 
 
-export const createNewChannel = async ()=>{
-    
+export const createNewChannel = async (channel)=>{
+            return await Channel.create(channel)
 }
