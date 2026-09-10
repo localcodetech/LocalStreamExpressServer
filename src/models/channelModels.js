@@ -48,4 +48,4 @@ const Channel = sequelize.define("Channel", {
 
 
 
-export default sequelize;
+export default Channel;
