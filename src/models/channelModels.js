@@ -49,7 +49,6 @@ const Channel = sequelize.define("Channel", {
     }
 })
 
-Channel.sync()
 
 
 export default Channel;
