@@ -42,10 +42,14 @@ const Channel = sequelize.define("Channel", {
     },
     isLive: {
         type: DataTypes.STRING
+    },
+    logo: {
+        type: DataTypes.STRING,
+        defaultValue: "https://placehold.net/default.png"
     }
 })
 
-
+Channel.sync()
 
 
 export default Channel;
