@@ -1,28 +1,28 @@
-// import schema from "../schemas/channelSchema.js";
+import schema from "../schemas/channelSchema.js";
 
 
 // import { ChannelServices } from "../services/channelServices.js";
 
 
 
-// export const registerNewChannel = async (req, res) =>{
-//     console.log(req.body)
-//     const channelValidation = await schema.safeParseAsync(req.body)
+export const registerNewChannel = async (req, res) =>{
+    console.log(req.body)
+    const channelValidation = await schema.safeParseAsync(req.body)
 
-//     if (!channelValidation.success){
-//         return res.status(400).json({error: channelValidation.error.message})
-//     };
+    if (!channelValidation.success){
+        return res.status(400).json({error: channelValidation.error.message})
+    };
 
 
 
-//     try{
+    try{
 
-//         const data =  await ChannelServices(channelValidation.data)
+        const data =  await ChannelServices(channelValidation.data)
 
-//         res.status(201).json({message: "data created", data:data})
+       return  res.status(201).json({message: "data created", data:data})
 
-//     }catch(err){
+    }catch(err){
+          return  res.status(500).json({error: err.message})
+    }
 
-//     }
-
-// }
+}
