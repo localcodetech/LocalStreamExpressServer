@@ -6,7 +6,7 @@ import {writeFile, readFile} from "fs/promises";
 
 
 const {PORT} = process.env;
-const ERROR_FILE = "logs/logging.txt"
+// const ERROR_FILE = "logs/logging.txt"
 
 
 const main =async ()=>{
@@ -27,7 +27,7 @@ const main =async ()=>{
             }
         )
     }catch(error){
-            await  writeFile(ERROR_FILE,error.message, {mode: '007'} )
+            console.log(error.message)
     }
 
 
