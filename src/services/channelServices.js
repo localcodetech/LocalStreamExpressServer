@@ -4,7 +4,7 @@ import { isStreamUrlActive } from "../utils/isStreamurlActve.js";
 
 
 
-export const ChannelServices = async ({name, category, type, isLive, description, streamUrl, logo }) =>{
+export const ChannelServices = async ({name, category, type,  description, streamUrl, logo }) =>{
 
 
     const sanitize = (channel)=>{
@@ -29,7 +29,6 @@ export const ChannelServices = async ({name, category, type, isLive, description
 if (isChannelExist){
     throw new Error ("Error: Channel already in our Database ...")
 };
-
 
 
         const createChannel =  createNewChannel({name, logo, description,type,category, streamUrl, isLive:streamActive })

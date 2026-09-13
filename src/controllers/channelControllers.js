@@ -1,7 +1,7 @@
 import schema from "../schemas/channelSchema.js";
 
 
-// import { ChannelServices } from "../services/channelServices.js";
+import { ChannelServices } from "../services/channelServices.js";
 
 
 

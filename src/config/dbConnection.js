@@ -7,7 +7,7 @@ import { Sequelize } from "sequelize";
 const {SERVICE_URI} = process.env
 
 const sequelize = new Sequelize(SERVICE_URI, {
-    dialect: "mysql"
+    dialect: "postgres"
 })
 
 
