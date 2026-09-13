@@ -6,10 +6,10 @@ import { DataTypes } from "sequelize";
 export const Channel = sequelize.define("Channel", {
 
     id : {
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-        unique: true
+        
     },
     uuid: {
         type: DataTypes.UUID,
@@ -44,9 +44,8 @@ export const Channel = sequelize.define("Channel", {
     },
     logo: {
         type: DataTypes.STRING,
-        defaultValue: "https://placehold.net/default.png"
+       
     }
 })
 
-//  Channel.sync()
 
