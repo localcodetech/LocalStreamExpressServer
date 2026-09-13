@@ -1,9 +1,10 @@
-import Channel from "../models/channelModels.js";
-
+import { Channel } from "../models/channelModels.js";
 
 
 
 // QUERIES HERE 
+
+
 
 export const findAllChannel = async () => {
     return await Channel.findAll();

@@ -1,10 +1,9 @@
-import { truncates } from "bcryptjs";
 import sequelize from "../config/dbConnection.js";
 import { DataTypes } from "sequelize";
 
 
 
-const Channel = sequelize.define("Channel", {
+export const Channel = sequelize.define("Channel", {
 
     id : {
         type: DataTypes.STRING,
@@ -49,6 +48,5 @@ const Channel = sequelize.define("Channel", {
     }
 })
 
+//  Channel.sync()
 
-
-export default Channel;
