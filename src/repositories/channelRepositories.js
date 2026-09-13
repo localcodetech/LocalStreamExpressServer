@@ -3,7 +3,7 @@ import { Channel } from "../models/channelModels.js";
 
 
 // QUERIES HERE 
-
+Channel.sync()
 
 
 export const findAllChannel = async () => {
