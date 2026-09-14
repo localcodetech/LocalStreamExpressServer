@@ -44,7 +44,7 @@ export const Channel = sequelize.define("Channel", {
     },
     logo: {
         type: DataTypes.STRING,
-       
+       defaultValue: "https://placehold.co/600x400"
     }
 })
 
