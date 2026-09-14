@@ -1,4 +1,4 @@
-import { registerNewChannel } from "../controllers/channelControllers.js";
+import { registerNewChannel, getAllChannel } from "../controllers/channelControllers.js";
 
 import { Router } from "express";
 
@@ -6,6 +6,7 @@ import { Router } from "express";
 
 
     router.post("/channel", registerNewChannel);
+    router.get("/channel", getAllChannel)
 
     router.get("/health", (_,res)=>{res.status(200).json({message: "Channel Route is reachable"})})
 

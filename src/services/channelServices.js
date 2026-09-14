@@ -36,3 +36,16 @@ if (isChannelExist){
 
         return sanitize(createChannel)
 };
+
+
+export const  findChannels  = async()=>{
+
+        const channels = await findAllChannel();
+    if (!channels){
+        throw new Error ("no Channel Available")
+    }
+
+    return channels;
+
+    
+}
