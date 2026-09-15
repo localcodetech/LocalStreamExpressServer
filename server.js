@@ -2,7 +2,7 @@ import app from "./src/init.js";
 import { config } from "dotenv";
 config();
 import sequelize from "./src/config/dbConnection.js";
-import {writeFile, readFile} from "fs/promises";
+// import {writeFile, readFile} from "fs/promises";
 
 
 const {PORT} = process.env;
